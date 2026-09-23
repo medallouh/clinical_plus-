@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Connexion — Clinicalplus">
+    <title>Connexion | Clinicalplus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/connexion.css">
+</head>
+
+<body class="auth-page">
+
+    <div class="auth-container">
+
+        <!-- ========================================
+             CÔTÉ GAUCHE — BRANDING
+        ======================================== -->
+
+        <div class="auth-side">
+
+            <a href="index.html" class="auth-logo">
+                <svg class="clinicalplus-logo" viewBox="0 0 48 48" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="authGradient" x1="8" y1="6" x2="40" y2="42" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#35B7ED"/>
+                            <stop offset="1" stop-color="#168BD0"/>
+                        </linearGradient>
+                    </defs>
+                    <rect x="1" y="1" width="46" height="46" rx="13" fill="url(#authGradient)"/>
+                    <path d="M31.5 13.5 C24.2 9.2 14.8 11.8 11.7 19.3 C8.5 27.1 12.3 36.2 20.2 39.1 C26.2 41.3 32.8 39.1 36.2 34.1"
+                          fill="none" stroke="white" stroke-width="3.2" stroke-linecap="round"/>
+                    <path d="M29.5 17.5 C24.9 15.1 19.5 16.4 17.2 20.6 C14.8 24.9 16.3 30.4 20.6 32.7 C24.4 34.8 29.2 33.8 32 30.4"
+                          fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" opacity="0.82"/>
+                    <circle cx="33.5" cy="14" r="2.5" fill="white"/>
+                </svg>
+                <span class="logo-text">Clinicalplus</span>
+            </a>
+
+            <div class="auth-side-content">
+                <h1>
+                    Votre parcours<br>
+                    continue <span>ici.</span>
+                </h1>
+                <p>
+                    Connectez-vous pour retrouver vos cours, résumés,
+                    examens et votre progression personnalisée.
+                </p>
+
+                <ul class="auth-features">
+                    <li>✅ Accès à tous vos cours</li>
+                    <li>✅ Résumés et fiches personnalisés</li>
+                    <li>✅ Examens et QSM interactifs</li>
+                    <li>✅ Suivi de votre progression</li>
+                </ul>
+            </div>
+
+            <p class="auth-side-footer">
+                © <span id="year"></span> Clinicalplus
+            </p>
+
+        </div>
+
+
+        <!-- ========================================
+             CÔTÉ DROIT — FORMULAIRE
+        ======================================== -->
+
+        <div class="auth-main">
+
+            <div class="auth-card">
+
+                <div class="auth-header">
+                    <h2>Connexion</h2>
+                    <p>Bon retour ! Connectez-vous à votre compte.</p>
+                </div>
+
+                <!-- Onglets Connexion / Inscription -->
+                <div class="auth-tabs" role="tablist">
+                    <button type="button" class="auth-tab active" data-tab="login" role="tab" aria-selected="true">
+                        Connexion
+                    </button>
+                    <button type="button" class="auth-tab" data-tab="register" role="tab" aria-selected="false">
+                        Inscription
+                    </button>
+                </div>
+
+
+                <!-- ========================================
+                     FORMULAIRE — CONNEXION
+                ======================================== -->
+
+                <form id="loginForm" class="auth-form active" novalidate>
+
+                    <div class="form-group">
+                        <label for="loginEmail">Adresse email</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">✉️</span>
+                            <input
+                                type="email"
+                                id="loginEmail"
+                                name="email"
+                                placeholder="vous@exemple.com"
+                                autocomplete="email"
+                                required
+                            >
+                        </div>
+                        <span class="form-error" data-error-for="loginEmail"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="loginPassword">Mot de passe</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">🔒</span>
+                            <input
+                                type="password"
+                                id="loginPassword"
+                                name="password"
+                                placeholder="••••••••"
+                                autocomplete="current-password"
+                                required
+                            >
+                            <button type="button" class="toggle-password" data-target="loginPassword" aria-label="Afficher le mot de passe">👁️</button>
+                        </div>
+                        <span class="form-error" data-error-for="loginPassword"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="rememberMe" name="remember">
+                            <span>Se souvenir de moi</span>
+                        </label>
+                        <a href="#" class="forgot-link">Mot de passe oublié ?</a>
+                    </div>
+
+                    <button type="submit" class="auth-submit">
+                        <span class="btn-text">Se connecter</span>
+                        <span class="btn-loader" aria-hidden="true"></span>
+                    </button>
+
+                    <div class="auth-message" data-message></div>
+
+                </form>
+
+
+                <!-- ========================================
+                     FORMULAIRE — INSCRIPTION
+                ======================================== -->
+
+                <form id="registerForm" class="auth-form" novalidate>
+
+                    <div class="form-group">
+                        <label for="registerName">Nom complet</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">👤</span>
+                            <input
+                                type="text"
+                                id="registerName"
+                                name="name"
+                                placeholder="Votre nom complet"
+                                autocomplete="name"
+                                required
+                            >
+                        </div>
+                        <span class="form-error" data-error-for="registerName"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="registerEmail">Adresse email</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">✉️</span>
+                            <input
+                                type="email"
+                                id="registerEmail"
+                                name="email"
+                                placeholder="vous@exemple.com"
+                                autocomplete="email"
+                                required
+                            >
+                        </div>
+                        <span class="form-error" data-error-for="registerEmail"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="registerPassword">Mot de passe</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">🔒</span>
+                            <input
+                                type="password"
+                                id="registerPassword"
+                                name="password"
+                                placeholder="Au moins 6 caractères"
+                                autocomplete="new-password"
+                                required
+                            >
+                            <button type="button" class="toggle-password" data-target="registerPassword" aria-label="Afficher le mot de passe">👁️</button>
+                        </div>
+                        <span class="form-error" data-error-for="registerPassword"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="registerConfirm">Confirmer le mot de passe</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">🔒</span>
+                            <input
+                                type="password"
+                                id="registerConfirm"
+                                name="confirm"
+                                placeholder="Confirmez votre mot de passe"
+                                autocomplete="new-password"
+                                required
+                            >
+                        </div>
+                        <span class="form-error" data-error-for="registerConfirm"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="acceptTerms" name="terms" required>
+                            <span>J'accepte les <a href="#" class="inline-link">conditions d'utilisation</a></span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="auth-submit">
+                        <span class="btn-text">Créer un compte</span>
+                        <span class="btn-loader" aria-hidden="true"></span>
+                    </button>
+
+                    <div class="auth-message" data-message></div>
+
+                </form>
+
+
+                <!-- Retour à l'accueil -->
+                <a href="index.html" class="back-home">← Retour à l'accueil</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/js/connexion.js"></script>
+
+</body>
+</html>

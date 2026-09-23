@@ -1,0 +1,554 @@
+/* ============================================================
+   CLINICALPLUS — connexion.css
+   Page de connexion / inscription
+   ============================================================ */
+
+/* ===== PAGE ===== */
+
+.auth-page {
+    min-height: 100vh;
+    background: #f7f9fc;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172b3a;
+}
+
+/* ===== CONTENEUR PRINCIPAL ===== */
+
+.auth-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+
+
+/* ============================================================
+   CÔTÉ GAUCHE — BRANDING
+   ============================================================ */
+
+.auth-side {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 60px;
+    overflow: hidden;
+    color: #ffffff;
+    background:
+        linear-gradient(135deg, rgba(7, 29, 51, 0.95) 0%, rgba(11, 53, 88, 0.92) 55%, rgba(22, 139, 208, 0.85) 100%),
+        url("https://www.marocetude.com/adresse/wp-content/uploads/2023/07/AF1QipNTCBC0NRoJJo1H7FE3D0-_IglyxmmZvubfK2jVw1600-h1000-k-no.jpeg")
+        center center / cover no-repeat;
+}
+
+.auth-side::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    right: -180px;
+    top: -180px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+
+.auth-side::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: -130px;
+    bottom: -130px;
+    border-radius: 50%;
+    background: rgba(255, 107, 97, 0.12);
+    pointer-events: none;
+}
+
+
+/* LOGO */
+
+.auth-logo {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+.auth-logo .clinicalplus-logo {
+    width: 44px;
+    height: 44px;
+    filter: drop-shadow(0 6px 14px rgba(22, 139, 208, 0.4));
+}
+
+.auth-logo .logo-text {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+
+/* CONTENU */
+
+.auth-side-content {
+    position: relative;
+    z-index: 2;
+    max-width: 480px;
+}
+
+.auth-side-content h1 {
+    color: #ffffff;
+    font-size: clamp(36px, 4.5vw, 56px);
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    font-weight: 800;
+}
+
+.auth-side-content h1 span {
+    color: #ff6b61;
+}
+
+.auth-side-content > p {
+    margin-top: 22px;
+    color: #c8d9e6;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.auth-features {
+    list-style: none;
+    padding: 0;
+    margin: 40px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.auth-features li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #dcecf7;
+    font-size: 15px;
+}
+
+.auth-side-footer {
+    position: relative;
+    z-index: 2;
+    color: #7890a2;
+    font-size: 12px;
+}
+
+
+/* ============================================================
+   CÔTÉ DROIT — FORMULAIRE
+   ============================================================ */
+
+.auth-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: #ffffff;
+    overflow-y: auto;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 440px;
+}
+
+.auth-header {
+    margin-bottom: 28px;
+}
+
+.auth-header h2 {
+    color: #071d33;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.8px;
+}
+
+.auth-header p {
+    margin-top: 8px;
+    color: #647587;
+    font-size: 15px;
+}
+
+
+/* ===== ONGLETS ===== */
+
+.auth-tabs {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 28px;
+    padding: 6px;
+    background: #f1f5f9;
+    border-radius: 12px;
+}
+
+.auth-tab {
+    flex: 1;
+    padding: 11px 16px;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    color: #647587;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.auth-tab:hover {
+    color: #168bd0;
+}
+
+.auth-tab.active {
+    background: #ffffff;
+    color: #168bd0;
+    box-shadow: 0 3px 10px rgba(7, 29, 51, 0.08);
+}
+
+
+/* ===== FORMULAIRES ===== */
+
+.auth-form {
+    display: none;
+    flex-direction: column;
+    gap: 18px;
+    animation: fadeIn 0.35s ease;
+}
+
+.auth-form.active {
+    display: flex;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ===== CHAMPS ===== */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: #071d33;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    background: #f8fafc;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 11px;
+    transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-wrapper:focus-within {
+    border-color: #168bd0;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(22, 139, 208, 0.12);
+}
+
+.input-icon {
+    flex-shrink: 0;
+    font-size: 16px;
+    opacity: 0.65;
+}
+
+.input-wrapper input {
+    flex: 1;
+    width: 100%;
+    padding: 14px 12px;
+    border: none;
+    background: transparent;
+    color: #0f172a;
+    font-size: 15px;
+    font-family: inherit;
+    outline: none;
+}
+
+.input-wrapper input::placeholder {
+    color: #94a3b8;
+}
+
+
+/* Erreur */
+
+.form-group.has-error .input-wrapper {
+    border-color: #ef4444;
+    background: #fef2f2;
+}
+
+.form-group.has-error .input-wrapper:focus-within {
+    box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.12);
+}
+
+.form-error {
+    color: #ef4444;
+    font-size: 12px;
+    font-weight: 600;
+    min-height: 14px;
+}
+
+
+/* Toggle mot de passe */
+
+.toggle-password {
+    flex-shrink: 0;
+    padding: 6px;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+}
+
+.toggle-password:hover {
+    opacity: 1;
+}
+
+
+/* ===== LIGNE (checkbox + lien) ===== */
+
+.form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #475569;
+    font-size: 13px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkbox-label input {
+    width: 16px;
+    height: 16px;
+    accent-color: #168bd0;
+    cursor: pointer;
+}
+
+.forgot-link,
+.inline-link {
+    color: #168bd0;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.forgot-link:hover,
+.inline-link:hover {
+    text-decoration: underline;
+}
+
+
+/* ===== BOUTON PRINCIPAL ===== */
+
+.auth-submit {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 6px;
+    padding: 15px 22px;
+    border: none;
+    border-radius: 11px;
+    background: linear-gradient(135deg, #35B7ED, #168BD0);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(22, 139, 208, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.auth-submit:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(22, 139, 208, 0.4);
+}
+
+.auth-submit:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.btn-loader {
+    display: none;
+    width: 18px;
+    height: 18px;
+    border: 2.5px solid rgba(255, 255, 255, 0.35);
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+}
+
+.auth-submit.loading .btn-loader {
+    display: inline-block;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+
+/* ===== MESSAGES ===== */
+
+.auth-message {
+    display: none;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.auth-message.show {
+    display: block;
+}
+
+.auth-message.success {
+    background: #ecfdf5;
+    color: #047857;
+    border: 1px solid #a7f3d0;
+}
+
+.auth-message.error {
+    background: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+}
+
+.auth-message.info {
+    background: #eff6ff;
+    color: #1d4ed8;
+    border: 1px solid #bfdbfe;
+}
+
+
+/* ===== RETOUR ACCUEIL ===== */
+
+.back-home {
+    display: inline-block;
+    margin-top: 30px;
+    color: #647587;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.back-home:hover {
+    color: #168bd0;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 950px) {
+
+    .auth-container {
+        grid-template-columns: 1fr;
+    }
+
+    .auth-side {
+        padding: 40px 30px;
+        min-height: auto;
+    }
+
+    .auth-side-content h1 {
+        font-size: 32px;
+    }
+
+    .auth-side-content > p {
+        font-size: 15px;
+    }
+
+    .auth-features {
+        display: none;
+    }
+
+    .auth-side-footer {
+        margin-top: 20px;
+    }
+
+    .auth-main {
+        padding: 30px 20px 60px;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .auth-side {
+        padding: 30px 22px;
+    }
+
+    .auth-side-content h1 {
+        font-size: 26px;
+    }
+
+    .auth-header h2 {
+        font-size: 26px;
+    }
+
+    .auth-tabs {
+        padding: 4px;
+    }
+
+    .auth-tab {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .input-wrapper input {
+        padding: 13px 10px;
+        font-size: 14px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+/* ===== ACCESSIBILITÉ ===== */
+
+@media (prefers-reduced-motion: reduce) {
+    .auth-form,
+    .auth-message,
+    .auth-submit,
+    .btn-loader {
+        animation: none !important;
+        transition: none !important;
+    }
+}

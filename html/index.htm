@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clinicalplus — Plateforme d'apprentissage médical pour les étudiants ISPITS">
+    <title>Clinicalplus | Plateforme d'apprentissage</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <!-- ========================================
+         HEADER
+    ======================================== -->
+
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <a href="#top" class="logo" aria-label="Clinicalplus">
+                <svg class="clinicalplus-logo" viewBox="0 0 48 48" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="clinicalplusGradient" x1="8" y1="6" x2="40" y2="42" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#35B7ED"/>
+                            <stop offset="1" stop-color="#168BD0"/>
+                        </linearGradient>
+                    </defs>
+                    <rect x="1" y="1" width="46" height="46" rx="13" fill="url(#clinicalplusGradient)"/>
+                    <path
+                        d="M31.5 13.5 C24.2 9.2 14.8 11.8 11.7 19.3 C8.5 27.1 12.3 36.2 20.2 39.1 C26.2 41.3 32.8 39.1 36.2 34.1"
+                        fill="none" stroke="white" stroke-width="3.2" stroke-linecap="round"/>
+                    <path
+                        d="M29.5 17.5 C24.9 15.1 19.5 16.4 17.2 20.6 C14.8 24.9 16.3 30.4 20.6 32.7 C24.4 34.8 29.2 33.8 32 30.4"
+                        fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" opacity="0.82"/>
+                    <circle cx="33.5" cy="14" r="2.5" fill="white"/>
+                </svg>
+                <span class="logo-text">Clinicalplus</span>
+            </a>
+
+            <nav class="main-nav" id="mainNav">
+                <a href="#top" class="nav-link active">🏠 <span>Accueil</span></a>
+                <a href="#filieres" class="nav-link">👤 <span>Filière</span></a>
+                <a href="#options" class="nav-link">🎓 <span>Option</span></a>
+                <a href="#matieres" class="nav-link">📖 <span>Matière</span></a>
+                <a href="#cours" class="nav-link">▶️ <span>Cours</span></a>
+                <a href="#examens" class="nav-link">📄 <span>Examens</span></a>
+                <a href="#resumes" class="nav-link">📁 <span>Résumés</span></a>
+                <a href="#qsm" class="nav-link">☑️ <span>QSM</span></a>
+            </nav>
+
+            <a href="connexion.htm" class="login-button">👤 Connexion</a>
+
+            <button class="mobile-menu" aria-label="Menu" type="button" aria-expanded="false">☰</button>
+        </div>
+    </header>
+ 
+
+    <!-- ========================================
+         HERO
+    ======================================== -->
+
+    <section class="hero" id="top">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <p class="hero-badge">🎓 PLATEFORME D'APPRENTISSAGE MÉDICAL</p>
+            <h1>Votre excellence<br>commence <span>ici</span></h1>
+            <p class="hero-text">
+                Accédez à tous vos cours, résumés, fiches et examens
+                pour réussir votre parcours dans le domaine de la santé.
+            </p>
+            <a href="#cours" class="hero-button">
+                📖 Visiter les cours
+                <span>→</span>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- ========================================
+         FEATURES
+    ======================================== -->
+
+    <section class="features-section">
+        <div class="container">
+            <div class="section-heading">
+                <p class="section-label">CLINICALPLUS</p>
+                <h2>Tout ce dont vous avez besoin <span>pour réussir</span></h2>
+                <p>
+                    Une plateforme pensée pour accompagner les étudiants
+                    en santé dans leur apprentissage, leur révision
+                    et leur préparation aux examens.
+                </p>
+            </div>
+
+            <div class="features-grid">
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5V5.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                            <path d="M4 5.5A2.5 2.5 0 0 1 6.5 8H20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                            <path d="M8 12h8M8 15h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Cours complets</h3>
+                    <p>Retrouvez vos cours organisés par filière, option et matière, au même endroit.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="5" y="3" width="14" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                            <path d="M8 7h8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                            <path d="M8 11h2M12 11h4M8 15h2M12 15h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                            <path d="M8 18h8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Réviser efficacement</h3>
+                    <p>Accédez aux résumés, fiches et ressources pour consolider vos connaissances.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                            <circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                            <circle cx="12" cy="12" r="1.8" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Préparer vos examens</h3>
+                    <p>Entraînez-vous avec des examens et des QSM pour être prêt le jour J.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================================
+         MATIÈRES (dynamique)
+    ======================================== -->
+
+    <section class="matieres-section" id="matieres">
+        <div class="container">
+            <div class="section-heading">
+                <p class="section-label">NOS MATIÈRES</p>
+                <h2>Explorez vos <span>matières</span></h2>
+                <p>Retrouvez les matières disponibles dans votre parcours de formation.</p>
+            </div>
+
+            <div id="matieres-container" class="matieres-grid">
+                <!-- Les matières seront chargées depuis script.js -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================================
+         FILIÈRES
+    ======================================== -->
+
+    <section class="tracks-section" id="filieres">
+        <div class="container">
+            <div class="section-heading">
+                <p class="section-label">NOS FORMATIONS</p>
+                <h2>Explorez nos <span>filières</span></h2>
+                <p>
+                    Choisissez votre filière pour accéder à votre parcours
+                    d'apprentissage et à l'ensemble de vos ressources.
+                </p>
+            </div>
+
+            <div class="tracks-grid">
+
+                <a href="#" class="track-card">
+                    <div class="track-image nursing-image"></div>
+                    <div class="track-content">
+                        <span class="track-number">01</span>
+                        <h3>Soins infirmiers</h3>
+                        <p>Développez vos compétences en soins infirmiers et préparez votre parcours professionnel.</p>
+                        <span class="track-link">Découvrir la filière →</span>
+                    </div>
+                </a>
+
+                <a href="#" class="track-card">
+                    <div class="track-image midwifery-image"></div>
+                    <div class="track-content">
+                        <span class="track-number">02</span>
+                        <h3>Sage-femme</h3>
+                        <p>Développez vos compétences en santé maternelle, obstétrique et soins néonatals.</p>
+                        <span class="track-link">Découvrir la filière →</span>
+                    </div>
+                </a>
+
+                <a href="#" class="track-card">
+                    <div class="track-image health-image"></div>
+                    <div class="track-content">
+                        <span class="track-number">03</span>
+                        <h3>Techniques de santé</h3>
+                        <p>Découvrez les différentes spécialités techniques du domaine de la santé.</p>
+                        <span class="track-link">Découvrir la filière →</span>
+                    </div>
+                </a>
+
+                <a href="#" class="track-card">
+                    <div class="track-image rehab-image"></div>
+                    <div class="track-content">
+                        <span class="track-number">04</span>
+                        <h3>Rééducation & réhabilitation</h3>
+                        <p>Explorez les connaissances et compétences liées à la rééducation et à la réhabilitation.</p>
+                        <span class="track-link">Découvrir la filière →</span>
+                    </div>
+                </a>
+
+                <a href="#" class="track-card">
+                    <div class="track-image social-work-image"></div>
+                    <div class="track-content">
+                        <span class="track-number">05</span>
+                        <h3>Assistant(e) social</h3>
+                        <p>Accompagnez les personnes et les familles dans leurs parcours sociaux et médico-sociaux.</p>
+                        <span class="track-link">Découvrir la filière →</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================================
+         OPTIONS
+    ======================================== -->
+
+    <section class="options-section" id="options">
+        <div class="container">
+            <div class="section-heading">
+                <p class="section-label">NOS OPTIONS</p>
+                <h2>Choisissez votre <span>spécialité</span></h2>
+                <p>Sélectionnez votre option pour accéder aux matières, cours et ressources correspondants.</p>
+            </div>
+
+            <!-- SOINS INFIRMIERS -->
+            <div class="option-category">
+                <div class="option-category-header">
+                    <span class="category-icon">🩺</span>
+                    <div>
+                        <span class="category-label">FILIÈRE</span>
+                        <h3>Soins infirmiers</h3>
+                    </div>
+                </div>
+
+                <div class="options-grid">
+                    <a href="#" class="option-card">
+                        <div class="option-icon">🩺</div>
+                        <div><h3>Infirmier polyvalent</h3><p>Formation générale en soins infirmiers.</p></div>
+                        <span class="option-arrow">→</span>
+                    </a>
+                    <a href="#" class="option-card">
+                        <div class="option-icon">🧠</div>
+                        <div><h3>Infirmier en psychiatrie / santé mentale</h3><p>Soins et accompagnement en santé mentale.</p></div>
+                        <span class="option-arrow">→</span>
+                    </a>
+                    <a href="#" class="option-card">
+                        <div class="option-icon">💉</div>
+                        <div><h3>Infirmier en anesthésie et réanimation</h3><p>Anesthésie, réanimation et soins critiques.</p></div>
+                        <span class="option-arrow">→</span>
+                    </a>
+                    <a href="#" class="option-card">
+                        <div class="option-icon">🚑</div>
+                        <div><h3>Infirmier en soins d'urgence et soins intensifs</h3><p>Prise en charge des urgences et des patients en soins intensifs.</p></div>
+                        <span class="option-arrow">→</span>
+                    </a>
+                    <a href="#" class="option-card">
+                        <div class="option-icon">🏠</div>
+                        <div><h3>Infirmier en santé de famille et santé communautaire</h3><p>Soins de proximité, prévention et santé communautaire.</p></div>
+                        <span class="option-arrow">→</span>
+                    </a>
+                    <a href="#" class="option-card">
+                        <div class="option-icon">👶</div>
+                        <div><h3>Infirmier en néonatologie et pédiatrie</h3><p>Soins spécialisés du nouveau-né et de l'enfant.</p></div>
+                        <span class="option-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- SAGE-FEMME -->
+            <div class="option-category">
+                <div class="option-category-header">
+                    <span class="category-icon">🤰</span>
+                    <div>
+                        <span class="category-label">FILIÈRE</span>
+                        <h3>Sage-femme</h3>
+                    </div>
+                </div>
+                <div class="options-grid">
+                    <a href="#" class="option-card">
+                        <div class="option-icon">🤰</div>
+                        <div><h3>Sage-femme</h3><p>Suivi de la grossesse, de l'accouchement et de la santé maternelle et néonatale.</p></div>
+                        <span class="option-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- TECHNIQUES DE SANTÉ -->
+            <div class="option-category">
+                <div class="option-category-header">
+                    <span class="category-icon">🔬</span>
+                    <div>
+                        <span class="category-label">FILIÈRE</span>
+                        <h3>Techniques de santé</h3>
+                    </div>
+                </div>
+                <div class="options-grid">
+                    <a href="#" class="option-card">
+                        <div class="option-icon">🧪</div>
+                        <div><h3>Technicien de laboratoire</h3><p>Analyses biologiques et techniques de laboratoire.</p></div>
+                        <span class="option-arrow">→</span>
+                    </a>
+                    <a href="#" class="option-card">
+                        <div class="option-icon">🩻</div>
+                        <div><h3>Technicien de radiologie</h3><p>Imagerie médicale et techniques radiologiques.</p></div>
+                        <span class="option-arrow">→</span>
+                    </a>
+                    <a href="#" class="option-card">
+                        <div class="option-icon">💊</div>
+                        <div><h3>Préparateur en pharmacie</h3><p>Préparation et gestion des produits pharmaceutiques.</p></div>
+                        <span class="option-arrow">→</span>
+                    </a>
+                    <a href="#" class="option-card">
+                        <div class="option-icon">🥗</div>
+                        <div><h3>Diététicien</h3><p>Nutrition, alimentation et prise en charge diététique.</p></div>
+                        <span class="option-arrow">→</span>
+                    </a>
+                    <a href="#" class="option-card">
+                        <div class="option-icon">🌱</div>
+                        <div><h3>Technicien d'hygiène du milieu</h3><p>Hygiène, prévention et protection de l'environnement.</p></div>
+                        <span class="option-arrow">→</span>
+                    </a>
+                    <a href="#" class="option-card">
+                        <div class="option-icon">⚙️</div>
+                        <div><h3>Technicien en maintenance biomédicale</h3><p>Maintenance et gestion des équipements biomédicaux.</p></div>
+                        <span class="option-arrow">→</span>
+                    </a>
+                    <a href="#" class="option-card">
+                        <div class="option-icon">📊</div>
+                        <div><h3>Technicien en statistiques sanitaires</h3><p>Données de santé, statistiques et analyse sanitaire.</p></div>
+                        <span class="option-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- RÉÉDUCATION -->
+            <div class="option-category">
+                <div class="option-category-header">
+                    <span class="category-icon">🧑‍⚕️</span>
+                    <div>
+                        <span class="category-label">FILIÈRE</span>
+                        <h3>Rééducation et réhabilitation</h3>
+                    </div>
+                </div>
+                <div class="options-grid">
+                    <a href="#" class="option-card">
+                        <div class="option-icon">🦵</div>
+                        <div><h3>Kinésithérapeute</h3><p>Rééducation fonctionnelle et récupération physique.</p></div>
+                        <span class="option-arrow">→</span>
+                    </a>
+                    <a href="#" class="option-card">
+                        <div class="option-icon">🗣️</div>
+                        <div><h3>Orthophoniste</h3><p>Rééducation de la communication et du langage.</p></div>
+                        <span class="option-arrow">→</span>
+                    </a>
+                    <a href="#" class="option-card">
+                        <div class="option-icon">🦿</div>
+                        <div><h3>Orthoprothésiste</h3><p>Appareillage et dispositifs de rééducation.</p></div>
+                        <span class="option-arrow">→</span>
+                    </a>
+                    <a href="#" class="option-card">
+                        <div class="option-icon">👁️</div>
+                        <div><h3>Orthoptiste</h3><p>Rééducation et prise en charge des troubles visuels.</p></div>
+                        <span class="option-arrow">→</span>
+                    </a>
+                    <a href="#" class="option-card">
+                        <div class="option-icon">🧠</div>
+                        <div><h3>Psychomotricien</h3><p>Rééducation psychomotrice et développement fonctionnel.</p></div>
+                        <span class="option-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- ASSISTANT(E) SOCIAL -->
+            <div class="option-category">
+                <div class="option-category-header">
+                    <span class="category-icon">🤝</span>
+                    <div>
+                        <span class="category-label">FILIÈRE</span>
+                        <h3>Assistant(e) social</h3>
+                    </div>
+                </div>
+                <div class="options-grid">
+                    <a href="#" class="option-card">
+                        <div class="option-icon">🤝</div>
+                        <div><h3>Assistant(e) social</h3><p>Accompagnement social et soutien des personnes et des familles.</p></div>
+                        <span class="option-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================================
+         MATIÈRES (grille statique)
+    ======================================== -->
+
+    <section class="subjects-section">
+        <div class="container">
+            <div class="section-heading">
+                <p class="section-label">VOTRE PARCOURS</p>
+                <h2>Découvrez vos <span>matières</span></h2>
+                <p>
+                    Retrouvez les principales matières de votre formation
+                    et accédez facilement aux ressources pédagogiques.
+                </p>
+            </div>
+
+            <div class="subjects-grid">
+
+                <a href="#" class="subject-card">
+                    <div class="subject-icon">
+                        <svg class="medical-svg-icon" viewBox="0 0 64 64" aria-hidden="true">
+                            <path d="M32 54 C28 49 12 38 12 24 C12 16 17 11 24 11 C28 11 31 13 32 17 C33 13 36 11 40 11 C47 11 52 16 52 24 C52 38 36 49 32 54Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M32 17 C29 22 29 27 32 31 C35 27 35 22 32 17Z" fill="currentColor" opacity="0.25"/>
+                        </svg>
+                    </div>
+                    <h3>Anatomie</h3>
+                    <span>Explorer le cours →</span>
+                </a>
+
+                <a href="#" class="subject-card">
+                    <div class="subject-icon">🧬</div>
+                    <h3>Physiologie</h3>
+                    <span>Explorer le cours →</span>
+                </a>
+
+                <a href="#" class="subject-card">
+                    <div class="subject-icon">💊</div>
+                    <h3>Pharmacologie</h3>
+                    <span>Explorer le cours →</span>
+                </a>
+
+                <a href="#" class="subject-card">
+                    <div class="subject-icon">🦠</div>
+                    <h3>Microbiologie</h3>
+                    <span>Explorer le cours →</span>
+                </a>
+
+                <a href="#" class="subject-card">
+                    <div class="subject-icon">🩹</div>
+                    <h3>Soins infirmiers</h3>
+                    <span>Explorer le cours →</span>
+                </a>
+
+                <a href="#" class="subject-card">
+                    <div class="subject-icon">🧪</div>
+                    <h3>Biochimie</h3>
+                    <span>Explorer le cours →</span>
+                </a>
+
+                <a href="#" class="subject-card">
+                    <div class="subject-icon">🧠</div>
+                    <h3>Psychologie</h3>
+                    <span>Explorer le cours →</span>
+                </a>
+
+                <a href="#" class="subject-card">
+                    <div class="subject-icon">🌡️</div>
+                    <h3>Pathologie</h3>
+                    <span>Explorer le cours →</span>
+                </a>
+
+                <a href="#" class="subject-card">
+                    <div class="subject-icon">👩‍⚕️</div>
+                    <h3>Hygiène hospitalière</h3>
+                    <span>Explorer le cours →</span>
+                </a>
+
+                <a href="#" class="subject-card">
+                    <div class="subject-icon">📋</div>
+                    <h3>Santé publique</h3>
+                    <span>Explorer le cours →</span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================================
+         COURS
+    ======================================== -->
+
+    <section class="courses-section" id="cours">
+        <div class="container">
+            <div class="section-heading">
+                <p class="section-label">RESSOURCES PÉDAGOGIQUES</p>
+                <h2>Apprenez avec nos <span>cours</span></h2>
+                <p>Accédez à des cours organisés et adaptés à votre parcours de formation en sciences de la santé.</p>
+            </div>
+
+            <div class="courses-grid">
+
+                <a href="#" class="course-card">
+                    <div class="course-top">
+                        <span class="course-category">Anatomie</span>
+                        <span class="course-icon">
+                            <svg class="medical-svg-icon" viewBox="0 0 64 64" aria-hidden="true">
+                                <path d="M32 54 C28 49 12 38 12 24 C12 16 17 11 24 11 C28 11 31 13 32 17 C33 13 36 11 40 11 C47 11 52 16 52 24 C52 38 36 49 32 54Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M32 17 C29 22 29 27 32 31 C35 27 35 22 32 17Z" fill="currentColor" opacity="0.25"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <h3>Anatomie générale</h3>
+                    <p>Étude de la structure et de l'organisation du corps humain.</p>
+                    <div class="course-footer">
+                        <span>📖 Cours</span>
+                        <span>→</span>
+                    </div>
+                </a>
+
+                <a href="#" class="course-card">
+                    <div class="course-top">
+                        <span class="course-category">Physiologie</span>
+                        <span class="course-icon">🧬</span>
+                    </div>
+                    <h3>Physiologie humaine</h3>
+                    <p>Comprendre le fonctionnement normal des différents systèmes de l'organisme.</p>
+                    <div class="course-footer">
+                        <span>📖 Cours</span>
+                        <span>→</span>
+                    </div>
+                </a>
+
+                <a href="#" class="course-card">
+                    <div class="course-top">
+                        <span class="course-category">Pharmacologie</span>
+                        <span class="course-icon">💊</span>
+                    </div>
+                    <h3>Pharmacologie</h3>
+                    <p>Principes fondamentaux des médicaments, leurs effets et leurs utilisations.</p>
+                    <div class="course-footer">
+                        <span>📖 Cours</span>
+                        <span>→</span>
+                    </div>
+                </a>
+
+                <a href="#" class="course-card">
+                    <div class="course-top">
+                        <span class="course-category">Microbiologie</span>
+                        <span class="course-icon">🦠</span>
+                    </div>
+                    <h3>Microbiologie</h3>
+                    <p>Étude des microorganismes et de leur importance en santé.</p>
+                    <div class="course-footer">
+                        <span>📖 Cours</span>
+                        <span>→</span>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="courses-action">
+                <a href="#" class="secondary-button">
+                    Voir tous les cours
+                    <span>→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================================
+         RESSOURCES
+    ======================================== -->
+
+    <section class="resources-section">
+        <div class="container">
+            <div class="section-heading">
+                <p class="section-label">VOS RESSOURCES</p>
+                <h2>Apprenez, révisez et <span>entraînez-vous</span></h2>
+                <p>Retrouvez toutes vos ressources pédagogiques dans un espace simple et organisé.</p>
+            </div>
+
+            <div class="resources-grid">
+
+                <a href="#" class="resource-card resource-courses">
+                    <div class="resource-icon">📚</div>
+                    <div class="resource-content">
+                        <span class="resource-label">APPRENDRE</span>
+                        <h3>Cours</h3>
+                        <p>Consultez vos cours et supports pédagogiques organisés par matière.</p>
+                        <span class="resource-link">Accéder aux cours →</span>
+                    </div>
+                </a>
+
+                <a href="#" class="resource-card resource-exams" id="examens">
+                    <div class="resource-icon">📄</div>
+                    <div class="resource-content">
+                        <span class="resource-label">S'ENTRAÎNER</span>
+                        <h3>Examens</h3>
+                        <p>Retrouvez les examens et sujets pour tester vos connaissances.</p>
+                        <span class="resource-link">Voir les examens →</span>
+                    </div>
+                </a>
+
+                <a href="#" class="resource-card resource-summaries" id="resumes">
+                    <div class="resource-icon">📁</div>
+                    <div class="resource-content">
+                        <span class="resource-label">RÉVISER</span>
+                        <h3>Résumés</h3>
+                        <p>Révisez rapidement avec des fiches et résumés essentiels.</p>
+                        <span class="resource-link">Voir les résumés →</span>
+                    </div>
+                </a>
+
+                <a href="#" class="resource-card resource-qsm" id="qsm">
+                    <div class="resource-icon">☑️</div>
+                    <div class="resource-content">
+                        <span class="resource-label">S'ÉVALUER</span>
+                        <h3>QSM</h3>
+                        <p>Testez vos connaissances avec des questions adaptées à votre formation.</p>
+                        <span class="resource-link">Commencer un QSM →</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================================
+         ESPACE ÉTUDIANT
+    ======================================== -->
+
+    <section class="dashboard-section">
+        <div class="container">
+            <div class="dashboard-preview">
+                <div class="dashboard-content">
+                    <p class="section-label">ESPACE ÉTUDIANT</p>
+                    <h2>Votre apprentissage, <span>au même endroit.</span></h2>
+                    <p>
+                        Suivez votre parcours, retrouvez vos cours,
+                        vos résumés et vos examens depuis votre espace
+                        étudiant Clinicalplus.
+                    </p>
+                    <a href="dashboard.htm" class="dashboard-button">
+                        👤 Accéder à mon espace
+                        <span>→</span>
+                    </a>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="dashboard-card-header">
+                        <div>
+                            <span>Clinicalplus Dashboard</span>
+                            <strong>Mon espace</strong>
+                        </div>
+                        <div class="dashboard-avatar">👤</div>
+                    </div>
+
+                    <div class="dashboard-stats">
+                        <div class="dashboard-stat"><strong>12</strong><span>Cours</span></div>
+                        <div class="dashboard-stat"><strong>08</strong><span>Résumés</span></div>
+                        <div class="dashboard-stat"><strong>15</strong><span>Examens</span></div>
+                    </div>
+
+                    <div class="dashboard-progress">
+                        <div class="progress-top">
+                            <span>Progression</span>
+                            <strong>68%</strong>
+                        </div>
+                        <div class="progress-bar"><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================================
+         CONTACT
+    ======================================== -->
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-box">
+                <div class="contact-content">
+                    <p class="section-label">BESOIN D'AIDE ?</p>
+                    <h2>Une question sur <span>Clinicalplus</span> ?</h2>
+                    <p>Nous sommes là pour vous accompagner dans votre parcours d'apprentissage.</p>
+                </div>
+
+                <div class="contact-actions">
+                    <a href="mailto:clinicalplus.edu@gmail.com" class="contact-button">
+                        ✉️ Nous contacter
+                    </a>
+                    <a href="#" class="contact-social">
+                        📱 Réseaux sociaux
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+                    <a href="#top" class="footer-logo" aria-label="Clinicalplus">
+                        <svg class="clinicalplus-logo" viewBox="0 0 48 48" aria-hidden="true">
+                            <defs>
+                                <linearGradient id="footerClinicalplusGradient" x1="8" y1="6" x2="40" y2="42" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="#35B7ED"/>
+                                    <stop offset="1" stop-color="#168BD0"/>
+                                </linearGradient>
+                            </defs>
+                            <rect x="1" y="1" width="46" height="46" rx="13" fill="url(#footerClinicalplusGradient)"/>
+                            <path d="M31.5 13.5 C24.2 9.2 14.8 11.8 11.7 19.3 C8.5 27.1 12.3 36.2 20.2 39.1 C26.2 41.3 32.8 39.1 36.2 34.1" fill="none" stroke="white" stroke-width="3.2" stroke-linecap="round"/>
+                            <path d="M29.5 17.5 C24.9 15.1 19.5 16.4 17.2 20.6 C14.8 24.9 16.3 30.4 20.6 32.7 C24.4 34.8 29.2 33.8 32 30.4" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" opacity="0.82"/>
+                            <circle cx="33.5" cy="14" r="2.5" fill="white"/>
+                        </svg>
+                        <span class="logo-text">Clinicalplus</span>
+                    </a>
+                    <p>La plateforme d'apprentissage dédiée aux étudiants de l'ISPITS.</p>
+
+                    <div class="footer-socials">
+                        <a href="https://www.facebook.com/share/19peE4jeCy/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-facebook">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M14 8h3V4h-3c-3.3 0-5 1.9-5 5v3H6v4h3v4h4v-4h3l1-4h-4V9c0-.7.3-1 1-1z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/clinicalplus_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-instagram">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="5"/>
+                                <circle cx="12" cy="12" r="4"/>
+                                <circle cx="17.5" cy="6.5" r="1"/>
+                            </svg>
+                        </a>
+                        <a href="https://whatsapp.com/channel/0029VbCIm3YKwqSKXEK3vx04" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-whatsapp">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3z"/>
+                                <path d="M8.5 8.5c.3-.6.6-.6 1-.6h.4c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4-.1.6l-.7.8c.5 1 1.3 1.8 2.3 2.3l.8-.7c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.3.4.5v.4c0 .4 0 .7-.6 1-.6.3-1.4.3-2.2 0-1.1-.4-2.2-1.1-3.2-2.1s-1.7-2.1-2.1-3.2c-.2-.8-.2-1.6.1-2.2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <rect x="3" y="5" width="18" height="14" rx="2"/>
+                                    <path d="M4 7l8 6 8-6"/>
+                                </svg>
+                            </span>
+                            <a href="mailto:clinicalplus.edu@gmail.com">clinicalplus.edu@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="#top">Accueil</a></li>
+                        <li><a href="#filieres">Filières</a></li>
+                        <li><a href="#options">Options</a></li>
+                        <li><a href="#matieres">Matières</a></li>
+                        <li><a href="#cours">Cours</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Espace étudiant</h3>
+                    <ul>
+                        <li><a href="#">Connexion</a></li>
+                        <li><a href="#examens">Examens</a></li>
+                        <li><a href="#resumes">Résumés</a></li>
+                        <li><a href="#qsm">QSM</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Clinicalplus. Tous droits réservés.</p>
+                <p>Plateforme d'apprentissage médical</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="/js/script.js"></script>
+
+</body>
+</html>

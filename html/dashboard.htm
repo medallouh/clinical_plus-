@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Espace étudiant — Clinicalplus">
+    <title>Mon espace | Clinicalplus</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+
+<body class="dashboard-page">
+
+    <!-- ========================================
+         HEADER
+    ======================================== -->
+
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <a href="index.html" class="logo" aria-label="Clinicalplus">
+                <svg class="clinicalplus-logo" viewBox="0 0 48 48" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="clinicalplusGradient" x1="8" y1="6" x2="40" y2="42" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#35B7ED"/>
+                            <stop offset="1" stop-color="#168BD0"/>
+                        </linearGradient>
+                    </defs>
+                    <rect x="1" y="1" width="46" height="46" rx="13" fill="url(#clinicalplusGradient)"/>
+                    <path d="M31.5 13.5 C24.2 9.2 14.8 11.8 11.7 19.3 C8.5 27.1 12.3 36.2 20.2 39.1 C26.2 41.3 32.8 39.1 36.2 34.1"
+                          fill="none" stroke="white" stroke-width="3.2" stroke-linecap="round"/>
+                    <path d="M29.5 17.5 C24.9 15.1 19.5 16.4 17.2 20.6 C14.8 24.9 16.3 30.4 20.6 32.7 C24.4 34.8 29.2 33.8 32 30.4"
+                          fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" opacity="0.82"/>
+                    <circle cx="33.5" cy="14" r="2.5" fill="white"/>
+                </svg>
+                <span class="logo-text">Clinicalplus</span>
+            </a>
+
+            <nav class="main-nav" id="mainNav">
+                <a href="#overview" class="nav-link active">🏠 <span>Vue d'ensemble</span></a>
+                <a href="#mescours" class="nav-link">📚 <span>Mes cours</span></a>
+                <a href="#progression" class="nav-link">📊 <span>Progression</span></a>
+                <a href="#planning" class="nav-link">📅 <span>Planning</span></a>
+            </nav>
+
+            <!-- Menu utilisateur -->
+            <div class="user-menu" id="userMenu">
+                <button type="button" class="user-trigger" id="userTrigger" aria-expanded="false">
+                    <span class="user-avatar" id="userAvatar">👤</span>
+                    <span class="user-name" id="userName">Étudiant</span>
+                    <span class="user-chevron">▾</span>
+                </button>
+
+                <div class="user-dropdown" id="userDropdown">
+                    <div class="user-dropdown-header">
+                        <strong id="ddName">Étudiant</strong>
+                        <span id="ddEmail">email@exemple.com</span>
+                    </div>
+                    <ul>
+                        <li><a href="#" data-action="profile">👤 Mon profil</a></li>
+                        <li><a href="#" data-action="settings">⚙️ Paramètres</a></li>
+                        <li><a href="index.html">🏠 Retour au site</a></li>
+                        <li class="sep"></li>
+                        <li><a href="#" data-action="logout" class="logout-link">🚪 Se déconnecter</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="mobile-menu" aria-label="Menu" type="button">☰</button>
+        </div>
+    </header>
+
+
+    <!-- ========================================
+         WELCOME
+    ======================================== -->
+
+    <section class="welcome-section" id="overview">
+        <div class="container">
+            <div class="welcome-box">
+                <div class="welcome-content">
+                    <p class="welcome-badge">🎓 ESPACE ÉTUDIANT</p>
+                    <h1>Bonjour, <span id="welcomeName">Étudiant</span> 👋</h1>
+                    <p class="welcome-text">
+                        Reprenez votre parcours là où vous l'avez laissé.
+                        Retrouvez vos cours, votre progression et votre planning.
+                    </p>
+                </div>
+                <div class="welcome-stats">
+                    <div class="welcome-stat">
+                        <strong id="statCourses">12</strong>
+                        <span>Cours suivis</span>
+                    </div>
+                    <div class="welcome-stat">
+                        <strong id="statSummaries">08</strong>
+                        <span>Résumés</span>
+                    </div>
+                    <div class="welcome-stat">
+                        <strong id="statExams">15</strong>
+                        <span>Examens</span>
+                    </div>
+                    <div class="welcome-stat highlight">
+                        <strong id="statProgress">68%</strong>
+                        <span>Progression</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================================
+         ACTIONS RAPIDES
+    ======================================== -->
+
+    <section class="quick-actions-section">
+        <div class="container">
+            <div class="quick-actions-grid">
+
+                <a href="#" class="quick-card">
+                    <div class="quick-icon">📚</div>
+                    <h3>Cours</h3>
+                    <p>Consulter mes cours</p>
+                </a>
+
+                <a href="#" class="quick-card">
+                    <div class="quick-icon">📁</div>
+                    <h3>Résumés</h3>
+                    <p>Mes fiches de révision</p>
+                </a>
+
+                <a href="#" class="quick-card">
+                    <div class="quick-icon">📄</div>
+                    <h3>Examens</h3>
+                    <p>M'entraîner</p>
+                </a>
+
+                <a href="#" class="quick-card">
+                    <div class="quick-icon">☑️</div>
+                    <h3>QSM</h3>
+                    <p>Tester mes connaissances</p>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================================
+         MES COURS
+    ======================================== -->
+
+    <section class="my-courses-section" id="mescours">
+        <div class="container">
+            <div class="section-heading">
+                <p class="section-label">MES COURS</p>
+                <h2>Continuez votre <span>apprentissage</span></h2>
+                <p>Reprenez vos cours en cours et découvrez les nouveautés.</p>
+            </div>
+
+            <div class="my-courses-grid" id="myCoursesGrid">
+                <!-- Les cours seront injectés par JS -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================================
+         PROGRESSION
+    ======================================== -->
+
+    <section class="progress-section" id="progression">
+        <div class="container">
+            <div class="section-heading">
+                <p class="section-label">PROGRESSION</p>
+                <h2>Votre <span>parcours</span> en un coup d'œil</h2>
+            </div>
+
+            <div class="progress-grid">
+
+                <div class="progress-card">
+                    <div class="progress-card-header">
+                        <span class="progress-icon">📊</span>
+                        <h3>Anatomie</h3>
+                        <span class="progress-percent">85%</span>
+                    </div>
+                    <div class="progress-track"><span style="width:85%"></span></div>
+                    <p class="progress-meta">12 / 14 chapitres</p>
+                </div>
+
+                <div class="progress-card">
+                    <div class="progress-card-header">
+                        <span class="progress-icon">🧬</span>
+                        <h3>Physiologie</h3>
+                        <span class="progress-percent">72%</span>
+                    </div>
+                    <div class="progress-track"><span style="width:72%"></span></div>
+                    <p class="progress-meta">10 / 14 chapitres</p>
+                </div>
+
+                <div class="progress-card">
+                    <div class="progress-card-header">
+                        <span class="progress-icon">💊</span>
+                        <h3>Pharmacologie</h3>
+                        <span class="progress-percent">45%</span>
+                    </div>
+                    <div class="progress-track"><span style="width:45%"></span></div>
+                    <p class="progress-meta">6 / 14 chapitres</p>
+                </div>
+
+                <div class="progress-card">
+                    <div class="progress-card-header">
+                        <span class="progress-icon">🦠</span>
+                        <h3>Microbiologie</h3>
+                        <span class="progress-percent">30%</span>
+                    </div>
+                    <div class="progress-track"><span style="width:30%"></span></div>
+                    <p class="progress-meta">4 / 14 chapitres</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================================
+         PLANNING / ACTIVITÉ
+    ======================================== -->
+
+    <section class="planning-section" id="planning">
+        <div class="container">
+            <div class="section-heading">
+                <p class="section-label">ACTIVITÉ RÉCENTE</p>
+                <h2>Votre <span>planning</span></h2>
+                <p>Suivez vos dernières activités et vos prochaines échéances.</p>
+            </div>
+
+            <div class="planning-grid">
+
+                <div class="planning-card">
+                    <div class="planning-icon exam">📄</div>
+                    <div class="planning-content">
+                        <span class="planning-tag">Examen</span>
+                        <h3>Anatomie générale — Partiel</h3>
+                        <p>Prévu dans <strong>3 jours</strong></p>
+                    </div>
+                    <a href="#" class="planning-action">Préparer →</a>
+                </div>
+
+                <div class="planning-card">
+                    <div class="planning-icon qsm">☑️</div>
+                    <div class="planning-content">
+                        <span class="planning-tag">QSM</span>
+                        <h3>Pharmacologie — Chapitre 5</h3>
+                        <p>Test disponible maintenant</p>
+                    </div>
+                    <a href="#" class="planning-action">Commencer →</a>
+                </div>
+
+                <div class="planning-card">
+                    <div class="planning-icon course">📚</div>
+                    <div class="planning-content">
+                        <span class="planning-tag">Cours</span>
+                        <h3>Physiologie — Système nerveux</h3>
+                        <p>Nouveau contenu disponible</p>
+                    </div>
+                    <a href="#" class="planning-action">Voir →</a>
+                </div>
+
+                <div class="planning-card">
+                    <div class="planning-icon summary">📁</div>
+                    <div class="planning-content">
+                        <span class="planning-tag">Résumé</span>
+                        <h3>Microbiologie — Fiche 3</h3>
+                        <p>Ajouté récemment</p>
+                    </div>
+                    <a href="#" class="planning-action">Ouvrir →</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+                <p>© <span id="year"></span> Clinicalplus. Tous droits réservés.</p>
+                <p>Espace étudiant</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="dashboard.js"></script>
+
+</body>
+</html>
